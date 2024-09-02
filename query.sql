@@ -41,3 +41,32 @@ Established text
 --inserting data in publication
 INSERT into Publication values(null,'Sukunda Publication', 'KTM', '2000');
 
+
+-- Book Table
+CREATE TABLE Book
+(
+Id Integer PRIMARY KEY AUTOINCREMENT,
+Title text,
+PublishedDate text,
+Price real,
+ISBN text UNIQUE,
+Genre text,
+Publication_id integer,
+Author_id integer,
+FOREIGN key (Publication_id)REFERENCES Publication(Id),
+FOREIGN key (Author_id)REFERENCES Author(Id)
+);
+
+
+--inserting data into Book 
+ 
+ insert into Book values(
+ null,
+ 'Let Us c',
+ '2018',
+ '700.00',
+ '111',
+ 'Technology',
+ 1,
+ 1);
+ DELETE from book  
