@@ -1,0 +1,14 @@
+p{
+    font-family: 'Courier New', Courier, monospace;
+     color: darkred}
+     h2{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: aquamarine;
+
+
+     }
+     img {
+        box-shadow: 10px 10px 20px grey;
+        height: 500px;
+        width: 800px;
+    }

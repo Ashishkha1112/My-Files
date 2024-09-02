@@ -4,46 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Files</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/college.css"/>
+<script src="js/college.js"></script>
+    
 </head>
 <body>
     <h1>Introduction</h1>
-    <h2>QAA Certified College</h2>
+    <h2 >QAA Certified College</h2>
     <p >Among the affiliated educational institutions of Pokhara University, it is the first educational institution to receive the Quality Assurance and Accreditation (QAA) certificate from the University Grants Commission (UGC).</p>
     <div style="text-align: center;">
-        <img height="300px" width="800px" src="https://nast.edu.np/wp-content/uploads/2024/07/1708434571036-1-scaled.jpg" alt="">
+        <img  src="https://nast.edu.np/wp-content/uploads/2024/07/1708434571036-1-scaled.jpg" alt=""/>
 
     </div>
     <h2>QAA Certified and 24 Years of Experience</h2>
 <p>National Academy of Science and Technology, popularly known as NAST, is an QAA Certified, english medium co- educational Institution. Patroned and promoted by a team of academicians, researchers and professionals renowned both at home and abroad, NAST has proved itself as a centre of learning for academic excellence in the field of science-technology and management.</p>
 <div>
     <h2>Contact Us</h2> 
-
-
     <form action="get">
-    <label><b>Name</b></label>
-    <Div><input type="text" name="firstName" id="firstname" /></Div> 
-        
-           
-    
-
-        <label><b>Email</b></label>
-        <div>
-            <input type="email" name="email" id="email" />
-
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+          </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label"><b>Subject</b></label>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter the subject">
         </div>
-           
-        <label><b>Subject</b></label>
-       <div>   
-        <input type="text" name="subject" id="subject" />
-    </div>
-    
-        <label><b>Message</b></label>
-        <div>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-    </div>
-    <input type="submit" name="submit" value="Submit"id="submit">
+
+        <div class="mb-3">
+            <label for="message" class="form-label"><b>Message</b></label>
+            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="submit" onclick="show()">Submit</button>
     </form>
-</div>
 
 </body>
 </html>
