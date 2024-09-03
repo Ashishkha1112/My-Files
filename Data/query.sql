@@ -48,9 +48,8 @@ CREATE TABLE Book
 Id Integer PRIMARY KEY AUTOINCREMENT,
 Title text,
 PublishedDate text,
-Price text,
-Edition text,
-ISBN text ,
+Price real,
+ISBN text UNIQUE,
 Genre text,
 Publication_id integer,
 Author_id integer,
@@ -66,8 +65,8 @@ FOREIGN key (Author_id)REFERENCES Author(Id)
  'Let Us c',
  '2018',
  '700.00',
- 'IV',
  '111',
  'Technology',
  1,
  1);
+ DELETE from book  
