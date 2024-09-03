@@ -5,7 +5,7 @@
 
 drop table book;
 drop TABLE Author;
-drop publication;
+drop TABLE publication;
 
 --Tables
 --Book(Id(pk),Title, PublishedDate Price,Edition,ISBN,Genre,PublicationId, AuthorID)
@@ -49,7 +49,8 @@ Id Integer PRIMARY KEY AUTOINCREMENT,
 Title text,
 PublishedDate text,
 Price real,
-ISBN text UNIQUE,
+Edition text,
+ISBN text ,
 Genre text,
 Publication_id integer,
 Author_id integer,
